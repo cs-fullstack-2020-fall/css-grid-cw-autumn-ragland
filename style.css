@@ -1,65 +1,52 @@
-/* optional body styling */
 body {
     /* background-color: lightblue; */
+    margin: 1%;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* parent element */
 .container {
+    /* border:  1px solid black; */
     display: grid;
-    /* height: 100vh; */
-    grid-template-columns: 3fr 1fr;
-    /* grid-template-rows: 2fr 1fr 2fr 2fr; */
+    grid-template-columns: 2fr 1fr;
 }
 
-/* child elements */
 header {
-    /* grid layout */
     grid-row: 1;
     grid-column: 1/3;
-    /* styling */
-    background-color: lightgray;
 }
+
 nav {
-    /* grid layout */
     grid-row: 2;
     grid-column: 1/3;
-    /* styling */
-    background-color: lightblue;
+    background-color: blue;
 }
+
 article {
-    /* grid layout */
     grid-row: 3;
-    grid-column: 1/2;
-    /* styling */
-    background-color: lightgray;
+    grid-column: 1;
 }
+
 aside {
-    /* grid layout */
     grid-row: 3;
     grid-column: 2;
-    /* styling */
-    background-color: lightgray;
 }
 
 footer {
-    /* grid layout */
     grid-row: 4;
     grid-column: 1/3;
-    /* styling */
+}
+
+.container > * {
+    /* border: 1px solid black; */
+    margin: 5px;
+    padding: 10px;
+}
+
+header, footer, article, aside {
     background-color: lightgray;
 }
 
-/* styling for all child elements */
-.container > * {
-    border: 1px solid gray;
-    margin: 5px;
-    padding: 1%;
-}
-
-/* styling for nav bar items */
-h4 {
-    display: inline;
-    text-decoration: underline;
+a {
     color: gray;
+    font-weight: bolder;
 }
