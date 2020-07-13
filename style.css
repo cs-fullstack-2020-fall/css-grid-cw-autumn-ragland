@@ -50,3 +50,10 @@ a {
     color: gray;
     font-weight: bolder;
 }
+
+nav > p {
+    display: inline;
+    text-decoration: underline;
+    color: gray;
+    font-weight: bold;
+}
